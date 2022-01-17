@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+   /* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(image/daun.jpg.jpg) ;
+    background-size:cover;
+    background-position:center ;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+#home-kedua{
+    font-size: 14;
+}
+
+/* Biodata Section */
+#biodata{
+    background-image: url(image/purple.png);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 400px;
+    height: 800px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+   
+}
+.table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse:collapse;
+    border-spacing:0%;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    height: 400px; 
+    text-align: center;
+    
+}
+.th,td{
+    padding: 12px 15px;
+    color: #503650;
+    border: 2px solid #422058;
+}
+
+/* Dream Countries to Visit*/
+#Dream_Countries_to_Visit{
+    background-image: url(image/mountain.jpg);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 20px; 
+}
+.dream-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.dream-gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 360px;
+}
+.dream-gallery img p{
+    position: absolute;
+    left: 16px;      
+}
+
+/* Education Section */
+#Education{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url(image/green\ 2.jpg);
+    display: flex;
+    flex-direction: column;
+    color: rgb(55, 78, 49);
+    align-items: center;
+    padding: 20px;
+    font-size: 17px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 485px;
+    border: 1px solid rgb(57, 87, 56);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(94, 151, 76, 0.801) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(98, 161, 96);
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 10px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2%
+}
+
+/* Experience*/
+#experience {
+    background-color: rgba(143, 66, 143, 0.664);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+}
+.experience img{
+    display: inline;
+    width: 50px;
+    height: 50px; 
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10%;
+    
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+/*Gallery*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+#gallery{
+        background-image: url(image/mountain.jpg);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        padding: 20px;
+        font-size: 21px;
+}
+.gallery center{
+    display:flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+
+    
+
+/* Family */
+
+#family{
+    background-image: url(image/daun.jpg.jpg);
+    display: flex;
+    flex-direction: column;
+    color: rgb(212, 238, 217);
+    align-items: center;
+    padding: 20px;
+}
+
+div.polaroid {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-image: url(image/daun.jpg.jpg);
+    font-size: 20px;
+    
+  }
+  
+  div.container {
+    padding: 15px;
+  }
+
+
+
+/* Contact Section*/ 
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-image: url(image/purple.png);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%; 
+    border: none;
+    outline:none;
+    
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border:none;
+    outline: none;
+    
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+    
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    
+}
